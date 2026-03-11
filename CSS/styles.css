@@ -1,0 +1,24 @@
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh;      /* Usa todo el alto de la pantalla */
+    margin: 0;
+    text-align: center;
+    background-color: #fafafa;
+    font-family: sans-serif;
+}
+
+
+.boton {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
