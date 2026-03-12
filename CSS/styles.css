@@ -1,12 +1,12 @@
 .cuerpo{
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    min-height: 100vh;      /* Usa todo el alto de la pantalla */
+    align-items: center;   
+    justify-content: center;
+    min-height: 100vh;     
     margin: 0;
     text-align: center;
-    background-color: #fafafa;
+    background-color: #10ffff;
     font-family: sans-serif;
 }
 
@@ -18,7 +18,6 @@
     border-radius: 5px;
     background-color: #007bff;
     color: white;
-    cursor: pointer;
     font-weight: bold;
 }
 
