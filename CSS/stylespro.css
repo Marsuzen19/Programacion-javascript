@@ -1,0 +1,70 @@
+/* 30 marzo */
+/* VARIABLES CSS - PALETA DE COLORES */
+/* SELECTOR PADRE */
+
+:root{
+    --colorPrimario:#292EFA;
+    --colorSecundario:#000000;
+    --colorTerciario:#F99F77;
+    --colorSombras:#282D31;
+    --colorTitulos:#000000;
+    --colorParrafos:#53575A;
+    --colorFondo:#02eeff;
+    --colorBordes: #11d0e9;
+    --zIndexNomal: 1;
+    --zIndexToolTip: 10;
+    --zIndexFixed: 100;
+    --zIndexModal: 1000;
+    --zIndexPopUp: 10000;
+}
+
+/* SELECTOR UNIVERSAL */
+/* Para que no sobren espacios vacios en mi banear y ocupe todo el espacio */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;/* Para que no aparezca la barrera de desplazamiento horizontal */
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    margin:0  auto;
+}
+.formulario{
+    display: flex;
+    flex-direction: column; 
+}
+.tituloo{
+    font-size:2.5em;
+    text-align:center;
+    text-shadow: var(--colorSombras) 2px 2px 3px;
+    color: var(--colorTitulos);
+    background-color: var(--colorFondo);
+
+}
+
+.casilla{
+    border:2px solid;
+    border-radius: 3px;
+    border-color: var(--colorBordes);
+    margin-bottom: 8px;
+}
+
+.boton{
+    font-size:20px;
+    background-color: var(--colorFondo);
+    color: #020202;
+    padding: 0.4em;
+    border-radius: 4px;
+     font-weight: bold;
+    
+}
+
+.letra{
+    font-size: 1.2em;
+    color: var(--colorParrafos);
+    text-shadow: var(--colorSombras) 1px 1px 2px;
+}
