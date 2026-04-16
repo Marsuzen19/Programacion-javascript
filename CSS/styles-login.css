@@ -1,0 +1,103 @@
+/* 30 marzo */
+/* VARIABLES CSS - PALETA DE COLORES */
+/* SELECTOR PADRE */
+
+:root{
+    --colorPrimario:#292EFA;
+    --colorSecundario:#852323;
+    --colorTerciario:#F99F77;
+    --colorSombras:#282D31;
+    --colorTitulos:#000000;
+    --colorParrafos:#53575A;
+    --colorFondo:#02eeff;
+    --colorBordes: #11d0e9;
+    --zIndexNomal: 1;
+    --zIndexToolTip: 10;
+    --zIndexFixed: 100;
+    --zIndexModal: 1000;
+    --zIndexPopUp: 10000;
+}
+
+/* SELECTOR UNIVERSAL */
+/* Para que no sobren espacios vacios en mi banear y ocupe todo el espacio */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;/* Para que no aparezca la barrera de desplazamiento horizontal */
+    
+}
+
+body{   
+    background-color: var(--colorFondo);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../Imagenes/loginfondo.jpg'); /*(Los dos puntos .. sirven para salir de la carpeta actual y buscar afuera)*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.titulo{
+    font-size:3em;
+    font-family:'Poppins';
+    display: flex; /* necesario para que funcione el justify content*/
+    justify-content: center;
+    margin-bottom: .5em;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Lo hace ver más imponente */
+    font-weight: 800; /* Un poco más de grosor ayuda al degradado */
+    /* 1. Definimos el degradado */
+    background: linear-gradient(90deg, #f00505, #e52e71);
+
+    /* 2. Propiedad con prefijo (para Chrome, Safari, Edge antiguos) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* 3. Propiedad ESTÁNDAR (para Firefox y compatibilidad futura) */
+    background-clip: text;
+    color: transparent;
+
+}
+
+.login-card{
+    background-color:#fff;
+    padding:2em;
+    border-radius:1em;
+    box-shadow:0 0 10px var(--colorSombras);
+    max-width:600px;
+}
+
+input{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .5em; /* Para no poner cero pone punto*/
+    font-size: 1em;
+    font-family: 'Poppins';
+    border: none; /*Para quitar los bordes*/
+}
+
+.boton{
+    width: 100%;
+    padding: .7em;
+    background-color: var(--colorPrimario);
+    font-size: 1em;
+    font-family:'Poppins';
+    font-weight: 500; /* para poner negrita*/
+    border: none;
+    color:#FFF;
+    margin-top: 1em;
+    transition: background-color 2s ease-in-out;
+}
+
+.boton:hover{
+    background-color: var(--colorSecundario);
+    transition: background-color 2s ease-in-out;
+
+}
