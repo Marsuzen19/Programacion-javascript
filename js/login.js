@@ -40,7 +40,7 @@ $(document).ready(function () /*apertura que permite usar la libreria jquery*/{
             timer: 2000, // El popup se cierra solo en 2 segundos //cuando tiempo pasa al pasar de pagina//
           }).then(() => {
             // Esta redirección se ejecuta cuando el timer termina
-            window.location.href = "dashboard2.html"; ////
+            window.location.href = "estudiantes.html"; ////
           });
           
         } else {
