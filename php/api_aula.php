@@ -18,11 +18,10 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 
 // PASO 2: ESTABLECEMOS CONEXION CON LA BASE DE DATOS
 
-$host = 'localhost';
-$db = 'MATRICULA';
-$user = 'root';
-$pass = '';
-
+$host = 'sql100.infinityfree.com';
+$db = 'if0_41711626_bdmatricula';
+$user = 'if0_41711626';
+$pass = 'yVIt7l5siia';
 
 // se usa para las conexines
 

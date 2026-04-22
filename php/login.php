@@ -3,10 +3,11 @@
 header('Content-Type: application/json');
 
 // Credenciales de la Base de Datos
-$host = 'localhost';
-$db   = 'matricula';
-$user = 'root';
-$pass = ''; // Cambiar si tu MySQL tiene contraseña
+$host = 'sql100.infinityfree.com';
+$db = 'if0_41711626_bdmatricula';
+$user = 'if0_41711626';
+$pass = 'yVIt7l5siia';
+// Cambiar si tu MySQL tiene contraseña
 
 try {
     // Conexión segura usando PDO
@@ -18,7 +19,7 @@ try {
     $passwordIngresada = $_POST['pass'] ?? '';
 
     // Preparar la consulta SQL para buscar al usuario
-    $sql = "SELECT id, password_hash FROM usuario WHERE username = :usuario LIMIT 1";
+    $sql = "SELECT id, password_hash FROM usuario WHERE username = :usuario LIMIT 1"; // el nombre de la tabla debe estar escrito en phpmyadmin en este caso usuario debe estar en mayusucula
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':usuario', $usuarioIngresado);
     $stmt->execute();

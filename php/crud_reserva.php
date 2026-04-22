@@ -1,10 +1,10 @@
 <?php
 header('Content-Type: application/json');
 
-$host = 'localhost';
-$db = 'MATRICULA';
-$user = 'root';
-$pass = '';
+$host = 'sql100.infinityfree.com';
+$db = 'if0_41711626_bdmatricula';
+$user = 'if0_41711626';
+$pass = 'yVIt7l5siia';
 
 try {
 
